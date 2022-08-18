@@ -11,11 +11,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
         org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration.class
 })
 //Auditing
-@EnableJpaAuditing(auditorAwareRef = "auditorAware")
+@EnableJpaAuditing(auditorAwareRef = "auditorAwareMethod")
 public class TurkcellFullStackDevelopmentApplication {
     //PSVM
     public static void main(String[] args) {
-        //devtool enabled tru
+        //devtool enabled true
         System.setProperty("spring.devtools.restart.enabled", "true");
 
         //JOptionalPane calisamasi icin
